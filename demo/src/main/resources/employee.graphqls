@@ -1,0 +1,17 @@
+schema{
+query: Query
+}
+
+type Query{
+getAllEmployee: [Employee]
+findEmployee(emplId: Int): Employee
+}
+
+type Employee
+{
+emplId: Int
+name: String
+fullName: String
+age: String
+grade: String
+}
